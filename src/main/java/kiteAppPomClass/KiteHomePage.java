@@ -32,7 +32,8 @@ public class KiteHomePage {
 	        }
 	        public void logOut() 
 	        {
-	        	userId.click();
+	        	userId.click(); 
+
 	        	
 	        	logOut.click();
 	        }
