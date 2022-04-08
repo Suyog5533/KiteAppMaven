@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome Browser Lunch Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Logging Kite Account]]>
+    </line>
+    <line>
+      <![CDATA[Logging Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Logging off Kite Account]]>
+    </line>
+    <line>
+      <![CDATA[Logout Successfully]]>
+    </line>
+    <line>
+      <![CDATA[BrowserClosed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-04-04T10:31:29 IST" name="Default suite" finished-at="2022-04-04T10:31:51 IST" duration-ms="22060">
+    <groups>
+    </groups>
+    <test started-at="2022-04-04T10:31:29 IST" name="Default test" finished-at="2022-04-04T10:31:51 IST" duration-ms="22060">
+      <class name="testClassesForKiteApp.KiteUserNameValidation">
+        <test-method is-config="true" signature="lunchingBrowser()[pri:0, instance:testClassesForKiteApp.KiteUserNameValidation@6bd61f98]" started-at="2022-04-04T10:31:29 IST" name="lunchingBrowser" finished-at="2022-04-04T10:31:42 IST" duration-ms="13046" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome Browser Lunch Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- lunchingBrowser -->
+        <test-method is-config="true" signature="loginToKiteApp1()[pri:0, instance:testClassesForKiteApp.KiteUserNameValidation@6bd61f98]" started-at="2022-04-04T10:31:42 IST" name="loginToKiteApp1" finished-at="2022-04-04T10:31:45 IST" duration-ms="3345" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logging Kite Account]]>
+            </line>
+            <line>
+              <![CDATA[Logging Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToKiteApp1 -->
+        <test-method signature="verifyUserName()[pri:0, instance:testClassesForKiteApp.KiteUserNameValidation@6bd61f98]" started-at="2022-04-04T10:31:45 IST" name="verifyUserName" finished-at="2022-04-04T10:31:49 IST" duration-ms="3483" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[UserID is not matching,TC is failed expected [Suyog@1997] but found [FS2092]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: UserID is not matching,TC is failed expected [Suyog@1997] but found [FS2092]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at testClassesForKiteApp.KiteUserNameValidation.verifyUserName(KiteUserNameValidation.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserName -->
+        <test-method is-config="true" signature="loggingOutFromKite()[pri:0, instance:testClassesForKiteApp.KiteUserNameValidation@6bd61f98]" started-at="2022-04-04T10:31:49 IST" name="loggingOutFromKite" finished-at="2022-04-04T10:31:50 IST" duration-ms="862" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logging off Kite Account]]>
+            </line>
+            <line>
+              <![CDATA[Logout Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loggingOutFromKite -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:testClassesForKiteApp.KiteUserNameValidation@6bd61f98]" started-at="2022-04-04T10:31:50 IST" name="closingBrowser" finished-at="2022-04-04T10:31:51 IST" duration-ms="1252" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[BrowserClosed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- testClassesForKiteApp.KiteUserNameValidation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
